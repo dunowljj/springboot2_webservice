@@ -16,7 +16,7 @@ apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
-group 'org.AWSsb2.book'
+group 'com.lduldu.book'
 version '1.0-SNAPSHOT'
 sourceCompatibility = 1.8
 
@@ -25,6 +25,7 @@ repositories {
 }
 
 dependencies {
-    implementation('org.springframework.boot:spring-boot-starter-web')
-    testImplementation('org.springframework.boot:spring-boot-starter-test')
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.projectlombok:lombok')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
 }
